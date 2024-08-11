@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let div= document.querySelector("div");
 
     function alertDiv() {
-        alert("Hola Spy el div");
+        alert("Hola Soy el div");
         
     }
 
