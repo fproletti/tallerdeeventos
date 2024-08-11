@@ -4,7 +4,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function alertSaludo() {
         alert("Hola soy el saludo");
+        
     }
     
-    boton.addEventListener("click", alertSaludo)
+
+    boton.addEventListener("click", (event) => {
+        alertSaludo();
+        event.stopPropagation();
+     })
+
+    let div= document.querySelector("div");
+
+    function alertDiv() {
+        alert("Hola Spy el div");
+        
+    }
+
+    div.addEventListener("click", alertDiv);
+
+
 });
